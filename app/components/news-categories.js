@@ -22,7 +22,7 @@ export default function NewsCategories() {
     ];
 
     return (
-        <div>
+        <div className={"hidden sm:block"}>
             {/*   show each categories link with a nice tailwind styled list */}
             <ul className={"space-y-2"}>
                 {categories.map((category, index) => {

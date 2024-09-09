@@ -13,7 +13,7 @@ export default function News({articles, categoryTitle}) {
                 </h1>
             </div>
 
-            <div className={"grid grid-cols-4 gap-4"}>
+            <div className={"grid sm:grid-cols-4 gap-4"}>
                 <NewsCategories/>
                 <div className={"col-span-3"}>
                     {categoryTitle && (
