@@ -54,7 +54,7 @@ export default async function Article({params}) {
                     </h1>
                 </div>
 
-                <div className={"grid grid-cols-4 gap-4"}>
+                <div className={"md:grid grid-cols-4 gap-4"}>
                     <NewsCategories/>
                     <div className={"col-span-3"}>
                         <BackToNewsLink/>
