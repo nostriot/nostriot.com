@@ -147,13 +147,13 @@ export async function getUserProfile(authorNpubHex, relayUrl) {
 }
 
 export async function getCachedUserProfile(authorNpubHex, relayUrl) {
-    return await getOrSetCache(process.env.KV_PREFIX + '-user-profile', async () => {
+    return await getOrSetCache(process.env.REDIS_PREFIX + '-user-profile', async () => {
         return await getUserProfile(authorNpubHex, relayUrl);
     });
 }
 
 export async function getCachedArticles(authorNpubHex, relayUrl) {
-    return await getOrSetCache(process.env.KV_PREFIX + '-articles', async () => {
+    return await getOrSetCache(process.env.REDIS_PREFIX + '-articles', async () => {
         return await getArticlesByAuthor(authorNpubHex, relayUrl);
     });
 }

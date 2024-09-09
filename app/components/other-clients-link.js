@@ -40,26 +40,26 @@ export default function ToggleDiv({article}) {
     return (
         <div className={"my-2"}>
             <button onClick={toggleDiv} className="rounded px-3 py-1 bg-black rounded-2xl text-white">
-                Read this another Nostr client
+                Read this in another Nostr client
             </button>
 
             {isVisible && (
-                <div className="mt-2 px-3">
-                    <p>
+                <div className="mt-4 p-3 border rounded md:w-1/2">
+                    <p className="mb-2">
                         <a href={`https://highlighter.com/a/${articleEntity}`} target="_blank" rel="noreferrer"
                            className={"underline"}
                         >
                             Read on Highlighter
                         </a>
                     </p>
-                    <p>
+                    <p className="mb-2">
                         <a href={`https://yakihonne.com/article/${articleEntity}`} target="_blank" rel="noreferrer"
                            className={"underline"}
                         >
                             Read on Yakihonne
                         </a>
                     </p>
-                    <p>
+                    <p className="mb-4">
                         <a href={`https://habla.news/a/${articleEntity}`} target="_blank" rel="noreferrer"
                            className={"underline"}
                         >
@@ -102,7 +102,7 @@ export default function ToggleDiv({article}) {
                                 </svg>
                             </div>
                             {copied && (
-                                <div className="text-sm text-green-500">Copied!</div>
+                                <div className="text-sm text-green-500 pt-1">Copied!</div>
                             )}
                         </Fragment>
                     )}
