@@ -55,8 +55,8 @@ export async function getOrSetCache(key, fetchData) {
 
         const dataToCache = JSON.stringify({ value: newData, expiry });
 
-        // Set new data in Redis with an expiry time
-        await redisClient.set(key, dataToCache);
+        // add "from-cache" key to the object to indicate that the data was fetched from the cache
+        newData.fromCache = true;
 
         return newData;
     } catch (error) {

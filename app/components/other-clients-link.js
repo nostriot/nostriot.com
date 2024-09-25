@@ -20,9 +20,6 @@ export default function ToggleDiv({article}) {
 
     let articleEntity;
     try {
-        console.log('articleDTag:', articleDTag)
-        // log .env vars
-        console.log('process.env.AUTHOR_PUBKEY:', process.env.NEXT_PUBLIC_RELAY_URL)
         if (articleDTag) {
             let relays = [process.env.NEXT_PUBLIC_RELAY_URL]
 
