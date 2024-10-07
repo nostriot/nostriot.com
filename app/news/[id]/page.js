@@ -49,9 +49,9 @@ export default async function Article({params}) {
             <Header/>
             <div className="container mx-auto p-4">
                 <div className="prose space-y-2 pb-8 pt-6">
-                    <h1 className="text-4xl font-bold">
+                    <p className="text-4xl font-bold">
                         Nostriot News
-                    </h1>
+                    </p>
                 </div>
 
                 <div className={"md:grid grid-cols-4 gap-4"}>
@@ -66,7 +66,7 @@ export default async function Article({params}) {
                             />
                         )}
                         <div className="p-4">
-                            <h1 className="text-3xl font-bold mb-0">
+                            <h1 className="text-4xl font-bold mb-0">
                                 {articleTitle}
                             </h1>
                             <OtherClientsLink article={article}/>

@@ -13,11 +13,19 @@
 }
 
 body {
-  /*color: rgb(var(--foreground-rgb));*/
+  background-color: #0F0F12;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+a:hover, a:focus {
+  color: purple !important;
+}
+
+a:hover h2, a:focus h2 {
+  color: purple !important;
 }

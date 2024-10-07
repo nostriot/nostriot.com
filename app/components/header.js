@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
         <header className="text-white p-4" style={{backgroundColor: '#0F0F12'}}>
-            <div className="container mx-auto flex items-center">
+            <div className="container mx-auto flex items-center px-4">
                 {/*<h1 className="text-2xl font-bold mr-8">{siteTitle}</h1>*/}
                 <Link href="/" className="text-white mr-6">
                     Home

@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function NewsCategories() {
 
     const categories = [
-        {
-            name: "Announcements",
-            slug: "announcements"
-        },
-        {
-            name: "Events",
-            slug: "events"
-        },
+        // {
+        //     name: "Announcements",
+        //     slug: "announcements"
+        // },
+        // {
+        //     name: "Events",
+        //     slug: "events"
+        // },
         {
             name: "News",
             slug: "news"
@@ -18,6 +18,14 @@ export default function NewsCategories() {
         {
             name: "Nostr",
             slug: "nostr"
+        },
+        {
+            name: "NIPs",
+            slug: "nips"
+        },
+        {
+            name: "Funding",
+            slug: "funding"
         }
     ];
 
