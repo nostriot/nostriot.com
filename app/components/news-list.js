@@ -12,13 +12,13 @@ export default function NewsList({articles}) {
                     <div key={index} className="pb-5">
                         <Link href={`/news/${slugifyForUri(articleTitle)}`}
                               className="flex">
-                            <div className={"prose"}>
-                                <p className="text-gray-500 text-sm">
+                            <div className={"prose dark:prose-invert"}>
+                                <p className="text-sm">
                                     {unixTimestampToDate(article.created_at)}
                                 </p>
                                 <h2 className={"mt-0 mb-2 underline"}>{articleTitle}</h2>
                                 {articleSummary && (
-                                    <p className={"text-gray-900"}>{articleSummary}</p>
+                                    <p>{articleSummary}</p>
                                 )}
                             </div>
                         </Link>
@@ -27,7 +27,7 @@ export default function NewsList({articles}) {
             })}
             {/*    if no articles */}
             {!articles.length && (
-                <p>There are no articles in this category yet.</p>
+                <p className={"prose dark:prose-invert"}>There are no articles in this category yet.</p>
             )}
         </section>
     );

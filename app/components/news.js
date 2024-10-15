@@ -7,7 +7,7 @@ import {Fragment} from "react";
 export default function News({articles, categoryTitle}) {
     return (
         <div className="container mx-auto p-4">
-            <div className="prose space-y-2 pb-8 pt-6">
+            <div className="prose dark:prose-invert space-y-2 pb-8 pt-6">
                 <h1 className="text-4xl font-bold">
                     Nostriot News
                 </h1>
@@ -20,7 +20,7 @@ export default function News({articles, categoryTitle}) {
                         <Fragment>
                             <BackToNewsLink/>
 
-                            <h2 className={"text-2xl py-3 mb-0"}>
+                            <h2 className={"text-2xl py-3 mb-0 prose dark:prose-invert"}>
                                 {categoryTitle}
                             </h2>
                         </Fragment>

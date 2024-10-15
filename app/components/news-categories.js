@@ -11,10 +11,10 @@ export default function NewsCategories() {
         //     name: "Events",
         //     slug: "events"
         // },
-        {
-            name: "News",
-            slug: "news"
-        },
+        // {
+        //     name: "News",
+        //     slug: "news"
+        // },
         {
             name: "Nostr",
             slug: "nostr"

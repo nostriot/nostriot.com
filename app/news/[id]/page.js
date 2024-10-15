@@ -2,7 +2,7 @@ import Header from '@/app/components/header';
 import {Fragment} from 'react';
 import ReactMarkdown from 'react-markdown';
 import {unixTimestampToDate, getCachedArticles, slugifyForUri} from '@/app/utils';
-import { Metadata, ResolvingMetadata } from "next";
+import {Metadata, ResolvingMetadata} from "next";
 import dotenv from 'dotenv';
 import Link from "next/link";
 import NewsCategories from "@/app/components/news-categories";
@@ -11,7 +11,7 @@ import OtherClientsLink from "@/app/components/other-clients-link";
 
 dotenv.config();
 
-export async function generateMetadata({ params, searchParams }, parent) {
+export async function generateMetadata({params, searchParams}, parent) {
     // read route params
     const id = params.id
 
@@ -48,7 +48,7 @@ export default async function Article({params}) {
         <Fragment>
             <Header/>
             <div className="container mx-auto p-4">
-                <div className="prose space-y-2 pb-8 pt-6">
+                <div className="prose dark:prose-invert space-y-2 pb-8 pt-6">
                     <p className="text-4xl font-bold">
                         Nostriot News
                     </p>
@@ -65,7 +65,7 @@ export default async function Article({params}) {
                                 className="w-full aspect-video max-h-64 object-cover mb-4"
                             />
                         )}
-                        <div className="p-4">
+                        <div className="p-4 prose dark:prose-invert">
                             <h1 className="text-4xl font-bold mb-0">
                                 {articleTitle}
                             </h1>
@@ -85,7 +85,7 @@ export default async function Article({params}) {
                             <p className="text-gray-500 text-sm mb-4">
                                 Published {unixTimestampToDate(article.created_at)}
                             </p>
-                            <div className="prose">
+                            <div>
                                 {!article.content && article.tags.find(tag => tag[0] === 'summary') && (
                                     <ReactMarkdown>
                                         {article.tags.find(tag => tag[0] === 'summary')[1]}

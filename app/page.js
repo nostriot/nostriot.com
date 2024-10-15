@@ -11,13 +11,13 @@ export default async function Home() {
         <Fragment>
             <Header/>
             <div className="container mx-auto columns-1 px-4">
-                <div className="h-screen  flex justify-center">
+                <div className="h-screen flex">
                     <div className="mt-10">
-                        <h1 className="text-white text-5xl">Nostriot.com</h1>
-                        <div className="text-white mt-4">
+                        <h1 className="prose dark:prose-invert text-5xl">Nostriot.com</h1>
+                        <div className="mt-4  prosedark:prose-invert">
                             <h2 className="text-xl mb-4 text-white">Bringing IoT to Nostr</h2>
                         </div>
-                        <div className="text-white">
+                        <div  className={"prose dark:prose-invert w-full"}>
                             <p className="text-2xl mb-4">Why?</p>
                             <p>Using the Nostr protocol for the Internet of Things could eliminate common
                                 problems like vendor lock-in and privacy concerns that plague centralised systems and
