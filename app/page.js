@@ -30,7 +30,7 @@ export default async function Home() {
                                 gives users and developers the freedom to build and expand their systems on their own
                                 terms.</p>
                         </div>
-                        <img src="/logo.jpg" alt="logo" className="w-128 mt-10"/>
+                        <img src="/logo.png" alt="logo" className="w-128 mt-10"/>
                     </div>
                 </div>
             </div>
