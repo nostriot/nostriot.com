@@ -31,12 +31,11 @@ export default function NewsCategories() {
 
     return (
         <div className={"hidden sm:block"}>
-            {/*   show each categories link with a nice tailwind styled list */}
             <ul className={"space-y-2"}>
                 {categories.map((category, index) => {
                         return (
                             <li key={index}>
-                                <Link href={`/news/category/${category.slug}`} className={"text-blue-500 hover:underline"}>
+                                <Link href={`/news/category/${category.slug}`}>
                                     {category.name}
                                 </Link>
                             </li>

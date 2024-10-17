@@ -13,7 +13,7 @@ export default function NewsList({articles}) {
                         <Link href={`/news/${slugifyForUri(articleTitle)}`}
                               className="flex">
                             <div className={"prose dark:prose-invert"}>
-                                <p className="text-sm">
+                                <p className="text-sm mb-0">
                                     {unixTimestampToDate(article.created_at)}
                                 </p>
                                 <h2 className={"mt-0 mb-2 underline"}>{articleTitle}</h2>

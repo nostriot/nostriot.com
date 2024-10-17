@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -14,16 +19,16 @@
   body {
     background-color: #0F0F12;
   }
+
+  a {
+    color: white;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-a {
-  color: purple;
 }
 
 a:hover, a:focus {
