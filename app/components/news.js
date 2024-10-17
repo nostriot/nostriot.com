@@ -8,9 +8,7 @@ export default function News({articles, categoryTitle}) {
     return (
         <div className="container mx-auto p-4">
             <div className="prose dark:prose-invert space-y-2 pb-8 pt-6">
-                <h1 className="text-4xl font-normal">
-                    Nostriot News
-                </h1>
+                <h1 className="text-4xl font-normal">News</h1>
             </div>
 
             <div className={"grid sm:grid-cols-4 gap-4"}>
@@ -20,7 +18,7 @@ export default function News({articles, categoryTitle}) {
                         <Fragment>
                             <BackToNewsLink/>
                             <h2 className={"text-3xl  py-3 mb-4 prose dark:prose-invert"}>
-                                Viewing posts in &ldquo; {categoryTitle} &rdquo;
+                                Viewing posts in &ldquo;{categoryTitle}&rdquo;
                             </h2>
                         </Fragment>
                     )}

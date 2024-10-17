@@ -4,6 +4,17 @@ dotenv.config();
 
 import Header from './components/header';
 import {Fragment} from 'react';
+import {getCachedArticles, slugifyForUri} from "@/app/utils";
+
+export async function generateMetadata({params, searchParams}, parent) {
+
+    return {
+        title: 'Bringing the Internet of Things to Nostr | Nostriot.com',
+        description: "Nostriot, an open source project integrating the Internet of Things (IoT) into the Nostr protocol. " +
+            "Join us to break free from iffy privacy policies, shady terms of service, vendor lock-in and centralised control.",
+        ogImage: 'logo.png'
+    }
+}
 
 export default async function Home() {
 
