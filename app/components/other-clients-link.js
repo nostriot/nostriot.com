@@ -36,12 +36,12 @@ export default function ToggleDiv({article}) {
 
     return (
         <div className={"my-2"}>
-            <button onClick={toggleDiv} className="rounded px-3 py-1 bg-black rounded-2xl text-white">
+            <button onClick={toggleDiv} className="rounded px-3 py-1 bg-black rounded-2xl text-white dark:border">
                 Read this in another Nostr client
             </button>
 
             {isVisible && (
-                <div className="mt-4 p-3 border rounded md:w-1/2">
+                <div className="mt-4 pt-0 p-3 border rounded md:w-1/2">
                     <p className="mb-2">
                         <a href={`https://highlighter.com/a/${articleEntity}`} target="_blank" rel="noreferrer"
                            className={"underline"}
@@ -79,7 +79,7 @@ export default function ToggleDiv({article}) {
                                     }
                                     }
                                     readOnly
-                                    className="p-2 mt-2 w-64 bg-gray-100 rounded block mr-2"
+                                    className="p-2 mt-2 w-64 bg-gray-100 rounded block mr-2 text-black"
                                 />
                                 {/* a clipboard icon */}
                                 <svg fill="#000000" width="24px" height="24px" viewBox="0 0 36 36" version="1.1"
