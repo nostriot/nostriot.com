@@ -20,7 +20,7 @@ export default function News({articles, categoryTitle}) {
                         <Fragment>
                             <BackToNewsLink/>
                             <h2 className={"text-3xl  py-3 mb-4 prose dark:prose-invert"}>
-                                Viewing posts in "{categoryTitle}"
+                                Viewing posts in &ldquo; {categoryTitle} &rdquo;
                             </h2>
                         </Fragment>
                     )}
