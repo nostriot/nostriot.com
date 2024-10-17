@@ -8,7 +8,6 @@
 
 a {
   color: black;
-  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
